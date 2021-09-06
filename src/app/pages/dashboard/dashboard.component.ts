@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.productService.getCategoyProduc().subscribe((resp: ResponseProduct) => {
       this.categories = resp.categories.sort((a,b) => a.ordinal - b.ordinal)
-      this.products = resp.products
+      this.products = resp.products.sort((a,b) => a.product_data.categories[0].ordinal - b.product_data.categories[0].ordinal)
     })
   }
 

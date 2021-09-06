@@ -1,16 +1,18 @@
-<div class="conatainer-category" *ngFor="let category of categories" >
-    <div class="titulo">
-        <p>{{category.name}}</p>
-        <!-- <p>Titulo</p> -->
-    </div>
-    <ng-container *ngFor="let product of products">
-        <div *ngIf="product.product_data.categories[0].category_id == category.id">
-            <div *ngIf="product.product_data.kind === 1">
-                <app-categoryone [product_data]="product.product_data"></app-categoryone>
-            </div>
-            <div *ngIf="product.product_data.kind === 2">
-                <app-categorytwo [product_data]="product.product_data"></app-categorytwo>
-            </div>
+<div class="container_category">
+    <div class="container_info"  *ngFor="let category of categories" >
+        <div class="title">
+            <p>{{category.name}}</p>
         </div>
-    </ng-container>
+        <ng-container *ngFor="let product of products">
+            <div *ngIf="product.product_data.categories[0].category_id == category.id">
+                <div *ngIf="product.product_data.kind === 1">
+                    <app-categoryone [product_data]="product.product_data"></app-categoryone>
+                </div>
+                <div *ngIf="product.product_data.kind === 2">
+                    <app-categorytwo [product_data]="product.product_data"></app-categorytwo>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    
 </div>
