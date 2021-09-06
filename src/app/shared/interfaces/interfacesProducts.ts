@@ -15,7 +15,7 @@ export interface ResponseProduct {
     name: string;
     categories: CategoryProduct[];
     stock: number;
-    ordinal?: number;
+    ordinal: number;
   }
   
   interface CategoryProduct {
