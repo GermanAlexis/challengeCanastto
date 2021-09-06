@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url : 'http://www.mocky.io/v2/5ed0b4443500005b00ff9e02'
+  url : 'http://www.mocky.io/v2/5ed0b4443500005b00ff9e02',
+  url_image: 'https://assets.compramass.com/products/'
 };
 
 /*
