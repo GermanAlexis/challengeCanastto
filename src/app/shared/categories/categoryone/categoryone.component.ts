@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Product, Productdata } from '../../interfaces/interfacesProducts';
 
 @Component({
   selector: 'app-categoryone',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categoryone.component.css']
 })
 export class CategoryoneComponent implements OnInit {
+
+  @Input() product_data!: Productdata
 
   constructor() { }
 
