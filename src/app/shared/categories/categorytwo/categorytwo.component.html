@@ -1,1 +1,22 @@
-<p>categorytwo works!</p>
+<div class="container">
+    <div class="container-block">
+        <div class="image">
+            <img [src]="image" [alt]="product_data.name">
+        </div>
+        <div class="contened">
+            <div class="div1">
+                <div class="titulo">
+                    {{product_data.name}}
+                </div>
+                <div class="precio">
+                    {{product_data.price | currency:'$':'symbol':'4.0-0'}}
+                </div>
+                <!-- <p>Titulo</p>
+                <p>Precio</p> -->
+            </div>
+            <div class="div2">
+                <a class="button">Comprar</a>
+            </div>
+        </div>
+    </div>
+</div>
