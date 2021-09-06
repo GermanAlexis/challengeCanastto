@@ -12,7 +12,7 @@
    ```sh
    npm install
    ```
-3. Enter your Navegitor in `localhost:4200`
+3. Enter your Browser in `localhost:4200`
    ```
    http//:localhost:4200
    ```
